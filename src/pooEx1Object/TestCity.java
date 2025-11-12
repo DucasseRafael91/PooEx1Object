@@ -12,13 +12,10 @@ public class TestCity {
         System.out.print("\nMETHODE TOSTRING\n\n");
         
         System.out.println(toulouse);
-        
         toulouse.setNumberOfResidents((toulouse.getNumberOfResidents() + 20000));
-        
         System.out.println(toulouse);
         System.out.println(paris);
         System.out.println(londres);
-        
         System.out.println(rabat);
         rabat.setCountry("Maroc");
         System.out.println(rabat);
@@ -27,6 +24,8 @@ public class TestCity {
         
         toulouse.display();
         rabat.display();
+        
+        System.out.print("\nAFFICHAGE DU NOMBRE DE VILLES \n\n");
         
         System.out.println(City.getNumberOfCities());   
     }

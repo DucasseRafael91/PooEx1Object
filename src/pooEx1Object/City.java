@@ -5,7 +5,7 @@ public class City {
     private String cityName;
     private String country;
     private int numberOfResidents;
-    private static int numberOfCities;
+    private static  int numberOfCities;
 
     public City(String cityName, String country, int numberOfResidents) {
     	
@@ -63,7 +63,7 @@ public class City {
         this.numberOfResidents = numberOfResidents;
     }
     
-    public static int getNumberOfCities() {
+    public static  int getNumberOfCities() {
         return numberOfCities;
     }
     
