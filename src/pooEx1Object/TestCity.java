@@ -16,6 +16,9 @@ public class TestCity {
         System.out.println(toulouse);
         System.out.println(paris);
         System.out.println(londres);
+        
+        System.out.println(rabat);
+        rabat.setCountry("Maroc");
         System.out.println(rabat);
         
     }

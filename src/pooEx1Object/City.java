@@ -24,7 +24,7 @@ public class City {
         }
         
     	setCityName(cityName);
-    	setCountry("unknow");
+    	setCountry("unknown");
     	setNumberOfResidents(numberOfResidents);
     }
     
