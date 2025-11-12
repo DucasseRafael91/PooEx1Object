@@ -7,6 +7,14 @@ public class Person {
     private int age;
     private String adress;
     
+    public Person(String lastName, String firstName, int age, String adress) {
+        setLastName(lastName);
+        setFirstName(firstName);
+        setAge(age);
+        setAdress(adress);
+    }
+
+    
 	public String getLastName() {
 		return lastName;
 	}
