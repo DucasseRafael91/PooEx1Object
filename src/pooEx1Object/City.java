@@ -61,6 +61,10 @@ public class City {
     
     @Override
     public String toString() {
-        return  "[ville : " + cityName + "] [pays : " + country + "] [nombre d'habitants : " + numberOfResidents + "]\n";
+        return  "Ville de " + cityName + " en " + country + " ayant " + numberOfResidents ;
+    }
+    
+    public void display() {
+        System.out.println("Ville de " + cityName + " en " + country + " ayant " + numberOfResidents);
     }
 }

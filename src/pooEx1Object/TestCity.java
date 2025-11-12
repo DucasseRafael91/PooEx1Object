@@ -9,6 +9,8 @@ public class TestCity {
         City londres = new City("Londres", "Angleterre", 1000000);
         City rabat = new City("Rabat",577000);
         
+        System.out.print("\nMETHODE TOSTRING\n\n");
+        
         System.out.println(toulouse);
         
         toulouse.setNumberOfResidents((toulouse.getNumberOfResidents() + 20000));
@@ -20,6 +22,11 @@ public class TestCity {
         System.out.println(rabat);
         rabat.setCountry("Maroc");
         System.out.println(rabat);
+        
+        System.out.print("\nMETHODE DISPLAY\n\n");
+        
+        toulouse.display();
+        rabat.display();
         
     }
 }
