@@ -5,6 +5,7 @@ public class City {
     private String cityName;
     private String country;
     private int numberOfResidents;
+    private static int numberOfCities;
 
     public City(String cityName, String country, int numberOfResidents) {
     	
@@ -15,6 +16,7 @@ public class City {
     	setCityName(cityName);
     	setCountry(country);
     	setNumberOfResidents(numberOfResidents);
+    	numberOfCities = numberOfCities + 1 ;
     }
     
     public City(String cityName,int numberOfResidents) {
@@ -26,6 +28,8 @@ public class City {
     	setCityName(cityName);
     	setCountry("unknown");
     	setNumberOfResidents(numberOfResidents);
+    	setNumberOfResidents(numberOfResidents);
+    	numberOfCities = numberOfCities + 1 ;
     }
     
     public String getCityName() {
@@ -59,6 +63,11 @@ public class City {
         this.numberOfResidents = numberOfResidents;
     }
     
+    public static int getNumberOfCities() {
+        return numberOfCities;
+    }
+    
+
     @Override
     public String toString() {
         return  "Ville de " + cityName + " en " + country + " ayant " + numberOfResidents ;

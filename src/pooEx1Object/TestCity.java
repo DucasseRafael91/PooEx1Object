@@ -28,5 +28,6 @@ public class TestCity {
         toulouse.display();
         rabat.display();
         
+        System.out.println(City.getNumberOfCities());   
     }
 }
