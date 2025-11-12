@@ -6,7 +6,9 @@ public class Person {
     private String firstName;
     private int age;
     private String adress;
+    private static int numberOfPerson;
     private City CityOfBirth;
+    
     
     public Person(String lastName, String firstName, int age, String adress, City CityOfBirth) {
         setLastName(lastName);
@@ -14,6 +16,8 @@ public class Person {
         setAge(age);
         setAdress(adress);
         setCityOfBirth(CityOfBirth);
+        numberOfPerson = numberOfPerson + 1;
+        
     }
     
     public Person(String lastName, String firstName, int age) {
@@ -21,6 +25,7 @@ public class Person {
         setFirstName(firstName);
         setAge(age);
         setAdress("unknown");
+        numberOfPerson = numberOfPerson + 1;
     }
     
     public Person(String lastName, String firstName) {
@@ -28,6 +33,7 @@ public class Person {
         setFirstName(firstName);
         setAge(0);
         setAdress("unknown");
+        numberOfPerson = numberOfPerson + 1;
     }
 
     
@@ -70,6 +76,10 @@ public class Person {
 	public void setCityOfBirth(City cityOfBirth) {
 		CityOfBirth = cityOfBirth;
 	}
+	
+    public static  int getNumberOfPerson() {
+        return numberOfPerson;
+    }
 	
     @Override
     public String toString() {
