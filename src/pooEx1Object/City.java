@@ -27,8 +27,14 @@ public class City {
         
     	setCityName(cityName);
     	setCountry("unknown");
-    	setNumberOfResidents(numberOfResidents);
-    	setNumberOfResidents(numberOfResidents);
+    	setNumberOfResidents(0);
+    	numberOfCities = numberOfCities + 1 ;
+    }
+    
+    public City(String cityName, String country) {
+    	
+    	setCityName(cityName);
+    	setCountry(country);
     	numberOfCities = numberOfCities + 1 ;
     }
     
@@ -70,7 +76,7 @@ public class City {
 
     @Override
     public String toString() {
-        return  "Ville de " + cityName + " en " + country + " ayant " + numberOfResidents ;
+        return  "[name=" + cityName + ", state=" + country + ", numberOfResidents=" + numberOfResidents + "]" ;
     }
     
     public void display() {

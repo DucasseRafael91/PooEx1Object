@@ -6,12 +6,14 @@ public class Person {
     private String firstName;
     private int age;
     private String adress;
+    private City CityOfBirth;
     
-    public Person(String lastName, String firstName, int age, String adress) {
+    public Person(String lastName, String firstName, int age, String adress, City CityOfBirth) {
         setLastName(lastName);
         setFirstName(firstName);
         setAge(age);
         setAdress(adress);
+        setCityOfBirth(CityOfBirth);
     }
     
     public Person(String lastName, String firstName, int age) {
@@ -61,9 +63,17 @@ public class Person {
 		this.adress = adress;
 	}
 	
+	public City getCityOfBirth() {
+		return CityOfBirth;
+	}
+
+	public void setCityOfBirth(City cityOfBirth) {
+		CityOfBirth = cityOfBirth;
+	}
+	
     @Override
     public String toString() {
-        return  "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress;
+        return  "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress + ", Born City=" + CityOfBirth + "]";
     }
 
 }
