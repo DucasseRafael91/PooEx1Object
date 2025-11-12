@@ -17,6 +17,17 @@ public class City {
     	setNumberOfResidents(numberOfResidents);
     }
     
+    public City(String cityName,int numberOfResidents) {
+    	
+        if (numberOfResidents < 0) {
+            throw new RuntimeException("Le nombre d'habitants ne peut pas être négatif");
+        }
+        
+    	setCityName(cityName);
+    	setCountry("unknow");
+    	setNumberOfResidents(numberOfResidents);
+    }
+    
     public String getCityName() {
         return cityName;
     }
@@ -46,5 +57,10 @@ public class City {
         }
         
         this.numberOfResidents = numberOfResidents;
+    }
+    
+    @Override
+    public String toString() {
+        return  "[ville : " + cityName + "] [pays : " + country + "] [nombre d'habitants : " + numberOfResidents + "]\n";
     }
 }

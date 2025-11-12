@@ -7,13 +7,16 @@ public class TestCity {
         City toulouse = new City("Toulouse", "France", 450000);
         City paris = new City("Paris", "France", 2000000);
         City londres = new City("Londres", "Angleterre", 1000000);
+        City rabat = new City("Rabat",577000);
         
-        System.out.println(toulouse.getCityName() + " " + toulouse.getCountry() + " " + toulouse.getNumberOfResidents());
-        System.out.println(paris.getCityName() + " " + paris.getCountry() + " " + paris.getNumberOfResidents());
-        System.out.println(londres.getCityName() + " " + londres.getCountry() + " " + londres.getNumberOfResidents());
+        System.out.println(toulouse);
         
         toulouse.setNumberOfResidents((toulouse.getNumberOfResidents() + 20000));
         
-        System.out.println(toulouse.getCityName() + " " + toulouse.getCountry() + " " + toulouse.getNumberOfResidents());
+        System.out.println(toulouse);
+        System.out.println(paris);
+        System.out.println(londres);
+        System.out.println(rabat);
+        
     }
 }
