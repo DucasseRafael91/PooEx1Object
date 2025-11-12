@@ -25,7 +25,6 @@ public class PooEx1Object {
         	if(person.getAdress().contains("Paris") || person.getCityOfBirth().getCountry() == "France") {
         		 System.out.println(person);		
         	}
-           
         }
     }
 }
