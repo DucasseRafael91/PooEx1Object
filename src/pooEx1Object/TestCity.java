@@ -11,5 +11,9 @@ public class TestCity {
         System.out.println(toulouse.getCityName() + " " + toulouse.getCountry() + " " + toulouse.getNumberOfResidents());
         System.out.println(paris.getCityName() + " " + paris.getCountry() + " " + paris.getNumberOfResidents());
         System.out.println(londres.getCityName() + " " + londres.getCountry() + " " + londres.getNumberOfResidents());
+        
+        toulouse.setNumberOfResidents((toulouse.getNumberOfResidents() + 20000));
+        
+        System.out.println(toulouse.getCityName() + " " + toulouse.getCountry() + " " + toulouse.getNumberOfResidents());
     }
 }
