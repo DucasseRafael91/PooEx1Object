@@ -7,6 +7,11 @@ public class City {
     private int numberOfResidents;
 
     public City(String cityName, String country, int numberOfResidents) {
+    	
+        if (numberOfResidents < 0) {
+            throw new RuntimeException("Le nombre d'habitants ne peut pas être négatif");
+        }
+        
     	setCityName(cityName);
     	setCountry(country);
     	setNumberOfResidents(numberOfResidents);
@@ -35,9 +40,11 @@ public class City {
     }
     
     public void setNumberOfResidents(int numberOfResidents) {
-    	if(numberOfResidents < 0) {
-    		throw new RuntimeException("Le nombre d'habitants ne peut pas etre negatif");
-    	}
+    	
+        if (numberOfResidents < 0) {
+            throw new RuntimeException("Le nombre d'habitants ne peut pas être négatif");
+        }
+        
         this.numberOfResidents = numberOfResidents;
     }
 }
