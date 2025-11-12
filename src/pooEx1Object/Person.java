@@ -13,6 +13,20 @@ public class Person {
         setAge(age);
         setAdress(adress);
     }
+    
+    public Person(String lastName, String firstName, int age) {
+        setLastName(lastName);
+        setFirstName(firstName);
+        setAge(age);
+        setAdress("unknown");
+    }
+    
+    public Person(String lastName, String firstName) {
+        setLastName(lastName);
+        setFirstName(firstName);
+        setAge(0);
+        setAdress("unknown");
+    }
 
     
 	public String getLastName() {
@@ -49,7 +63,7 @@ public class Person {
 	
     @Override
     public String toString() {
-        return  "[lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress;
+        return  "Person [lastName=" + lastName + ", firstName=" + firstName + ", age=" + age + ", adress=" + adress;
     }
 
 }
