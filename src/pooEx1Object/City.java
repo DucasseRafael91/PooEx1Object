@@ -76,7 +76,11 @@ public class City {
 
     @Override
     public String toString() {
-        return  "[name=" + cityName + ", state=" + country + ", numberOfResidents=" + numberOfResidents + "]" ;
+    	
+    	if(numberOfResidents == 0) {
+    		 return  cityName + " , " + country ;
+    	}
+        return  cityName + " , " + country + " , population " + cityName + " " + numberOfResidents + " d'habitants" ;
     }
     
     public void display() {
