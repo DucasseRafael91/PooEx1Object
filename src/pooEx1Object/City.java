@@ -35,6 +35,9 @@ public class City {
     }
     
     public void setNumberOfResidents(int numberOfResidents) {
+    	if(numberOfResidents < 0) {
+    		throw new RuntimeException("Le nombre d'habitants ne peut pas etre negatif");
+    	}
         this.numberOfResidents = numberOfResidents;
     }
 }
